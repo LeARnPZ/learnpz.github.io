@@ -1,0 +1,797 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--scroll-threshold: 250px;
+	--main-purple-color: rgb(179 153 237);
+	--main-white-color: rgb(239, 239, 239);
+	--main-background-gradient: linear-gradient(
+		180deg,
+		rgba(44, 49, 81, 1),
+		rgba(17, 21, 54, 0.86)
+	);
+	--main-nav-color: rgba(18, 22, 43);
+	--footer-font-color: rgba(239, 239, 239, 0.742);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--main-white-color);
+	background-image: var(--main-background-gradient);
+}
+
+.nav {
+	position: fixed;
+	margin-top: 0;
+	height: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+	transition: background-color 0.2s;
+	z-index: 10;
+}
+
+.nav-logo {
+	display: flex;
+	font-size: 2rem;
+	margin: auto 1rem;
+}
+
+.nav-logo img {
+	height: 70px;
+}
+
+.nav-logo a {
+	margin: auto 30px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: var(--main-white-color);
+}
+
+.nav-menu ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	text-transform: uppercase;
+}
+
+.nav-menu ul li {
+	list-style-type: none;
+}
+
+.nav-menu ul li a {
+	padding: 1rem;
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--main-white-color);
+	transition: color 0.5s;
+}
+
+.nav-menu ul li a:hover {
+	color: var(--main-purple-color);
+}
+
+.nav-hamburger {
+	position: absolute;
+	top: 2rem;
+	right: 1.5rem;
+	width: 1.875rem;
+	height: 1.313rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: color 0.5s;
+}
+
+.nav-hamburger-line {
+	height: 0.188rem;
+	width: 100%;
+	background-color: var(--main-white-color);
+	border-radius: 5px;
+	transition: all ease-in-out 0.2s;
+}
+
+.nav-hamburger:hover span {
+	background-color: var(--main-purple-color);
+}
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	background: url('../img/shubham-dhage-R5A_YlcSJwA-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -2;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+
+.hero-text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: rgba(32, 30, 30, 0.889) 0px 0px 10px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	color: var(--main-white-color);
+	line-height: 30px;
+	scroll-margin-top: 80px;
+}
+
+section:nth-of-type(3n + 2) {
+	background-color: #654e9aa8;
+}
+
+section:nth-of-type(3n) {
+	background-color: #70b0c0;
+}
+
+.wrapper {
+	margin: 30px auto;
+	max-width: 1200px;
+	text-align: justify;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+.about-app h3 {
+	padding-bottom: 15px;
+	text-decoration: var(--main-purple-color) underline;
+	text-decoration-thickness: 1.5px;
+}
+
+.about-app-text-introduction {
+	margin-bottom: 40px;
+}
+
+.about-app-flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about-app-flex-container ul {
+	margin-left: 18px;
+}
+
+.app-functions-text {
+	width: 50%;
+}
+
+.app-functions-text h3 {
+	padding-bottom: 0px;
+}
+
+.functions-subheader {
+	padding: 20px 0 3px;
+	font-weight: 700;
+}
+
+.app-mockups {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.mockup-img {
+	object-fit: scale-down;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	min-width: 100px;
+	max-height: 570px;
+	margin: 0 15px;
+}
+
+.mockup-img:nth-child(2n) {
+	margin-top: 60px;
+}
+
+.text-content,
+.members {
+	padding: 30px 0 20px 0;
+	align-content: center;
+}
+
+.about-app {
+	padding-top: 20px;
+}
+
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.team-member {
+	flex: 25%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.team-member h3 {
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+
+.team-member p {
+	padding: 2px 8px;
+	display: inline-block;
+	background-color: rgba(180, 153, 237, 0.263);
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.member-photo {
+	width: 160px;
+}
+
+.schedule .wrapper {
+	position: relative;
+	max-width: 1450px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-button {
+	position: absolute;
+	top: 50%;
+	background-color: transparent;
+	border: none;
+}
+
+.nav-button .schedule-nav-icon {
+	height: 50px;
+	color: var(--main-white-color);
+	transition: color 0.5s linear;
+}
+
+.nav-button:hover,
+.schedule-nav-icon:hover {
+	cursor: pointer;
+	color: hsl(232, 30%, 25%);
+}
+
+.nav-button.prev {
+	left: 0;
+}
+
+.nav-button.next {
+	right: 0;
+}
+
+.schedule-cards {
+	width: 90%;
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+}
+
+.schedule-cards .card {
+	min-width: 300px;
+	height: 215px;
+	margin: 35px 15px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(157, 214, 126);
+	border-radius: 25px;
+}
+
+.schedule-cards div.card:nth-child(2),
+.schedule-cards div.card:nth-child(6) {
+	background-color: rgb(216, 148, 198);
+}
+
+.schedule-cards div.card:nth-child(3) {
+	background-color: rgb(160, 188, 234);
+}
+
+.schedule-cards div.card:nth-child(4) {
+	background-color: rgb(187 164 245);
+}
+
+.card .card-subtitle {
+	height: 30px;
+	margin: 10px 20px 30px;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.card p.progress {
+	align-self: start;
+	margin-left: 23px;
+	font-size: 14px;
+}
+
+.card .progress-info {
+	align-self: flex-end;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.card .progress-container {
+	width: 85%;
+	height: 6px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.progress-container .progress-bar {
+	width: 80%;
+	height: 100%;
+	border-radius: 25px;
+}
+
+.schedule-cards div.card:nth-child(1) .progress-bar {
+	width: 100%;
+	background-color: rgb(113, 184, 74);
+}
+
+.schedule-cards div.card:nth-child(2) .progress-bar {
+	width: 100%;
+	background-color: rgb(209, 86, 176);
+}
+
+.schedule-cards div.card:nth-child(3) .progress-bar {
+	width: 100%;
+	background-color: rgb(85, 136, 219);
+}
+
+.schedule-cards div.card:nth-child(4) .progress-bar {
+	width: 100%;
+	background-color: rgb(132, 97, 223);
+}
+
+.schedule-cards div.card:nth-child(5) .progress-bar {
+	width: 100%;
+	background-color: rgb(113, 184, 74);
+}
+
+.schedule-cards div.card:nth-child(6) .progress-bar {
+	width: 100%;
+	background-color: rgb(209, 86, 176);
+}
+
+.meetings-table {
+	height: calc(auto);
+	border-collapse: collapse;
+	text-align: left;
+	transition: height 5s ease;
+	transition-behavior: allow-discrete;
+}
+
+.meetings-table th,
+td {
+	border-bottom: 1px solid var(--main-white-color);
+	padding: 15px 13px;
+}
+
+.meetings-table th {
+	letter-spacing: 1px;
+}
+
+.meetings .wrapper {
+	margin-bottom: 0px;
+}
+
+.collapse-section-box {
+	width: 100%;
+	margin: 10px 0 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.collapse-section-button {
+	background-color: transparent;
+	color: var(--main-white-color);
+	border: none;
+}
+
+.collapse-section-button svg {
+	width: 50px;
+	height: 50px;
+	transition: color 0.3s ease;
+}
+
+.collapse-section-button svg:hover {
+	cursor: pointer;
+	color: var(--main-purple-color);
+}
+
+.chevron-up-icon {
+	display: none;
+}
+
+.meetings-table tr:nth-last-child(-n + 14) {
+	display: none;
+}
+
+.files .files-content {
+	display: flex;
+	padding: 30px 0 20px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.files .button {
+	background-color: transparent;
+	border: none;
+}
+
+.files .button:hover {
+	cursor: pointer;
+}
+
+.file {
+	margin: 15px 10px 0;
+	flex: 1;
+}
+
+.file .icon {
+	height: 100px;
+	color: var(--main-purple-color);
+}
+
+.file p {
+	max-width: 180px;
+}
+
+footer {
+	position: relative;
+	padding: 30px 30px;
+	text-align: center;
+	background-color: var(--main-nav-color);
+	color: var(--footer-font-color);
+}
+
+footer .flaticon-link {
+	display: inline-block;
+	padding-top: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	color: rgba(239, 239, 239, 0.276);
+}
+
+footer .flaticon-link:visited {
+	text-decoration: none;
+	color: rgba(239, 239, 239, 0.276);
+}
+
+@media screen and (max-width: 1470px) {
+	.schedule .wrapper {
+		margin: 30px 40px;
+	}
+}
+
+@media screen and (max-width: 1245px) {
+	:root {
+		--scroll-threshold: 150px;
+	}
+
+	.nav-hamburger {
+		display: flex;
+	}
+
+	.nav-logo {
+		display: flex;
+	}
+
+	.nav-logo img {
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 80%;
+	}
+
+	.nav-menu {
+		position: absolute;
+		top: -20rem;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		background-color: var(--main-nav-color);
+		transition: all ease-in-out 0.4s;
+		z-index: -1;
+	}
+
+	.nav {
+		height: 70px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav-menu ul {
+		margin: 70px 0 10px 0;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-menu ul li {
+		padding: 8px 0;
+		text-align: center;
+	}
+
+	.nav-menu.active {
+		top: 0;
+	}
+
+	.nav-hamburger {
+		top: 1.5rem;
+	}
+
+	.nav-hamburger.active :nth-child(1) {
+		transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+	}
+
+	.nav-hamburger.active :nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-hamburger.active :nth-child(3) {
+		transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+	}
+
+	.header {
+		height: 80vh;
+	}
+
+	.hero-text {
+		font-size: 40px;
+	}
+
+	section {
+		scroll-margin-top: 55px;
+	}
+
+	.wrapper {
+		margin: 30px 60px;
+	}
+
+	.section-title {
+		font-size: 27px;
+	}
+
+	.mockup-img {
+		max-height: 450px;
+		margin: 0;
+	}
+
+	.mockup-img:nth-child(2n) {
+		margin-top: 40%;
+	}
+
+	.team-member {
+		flex: 25%;
+		text-align: center;
+		margin: 10px 10px;
+	}
+
+	.schedule-cards {
+		width: 80%;
+	}
+
+	.schedule-cards .card {
+		min-width: 270px;
+		height: 200px;
+		margin: 35px 10px 10px;
+	}
+
+	.card .card-subtitle {
+		height: 20px;
+		font-size: 14px;
+		margin-bottom: 45px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.app-functions-text {
+		width: 70%;
+	}
+
+	.app-mockups {
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	.mockup-img:nth-child(2n) {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 872px) {
+	.app-functions-text {
+		width: 80%;
+	}
+
+	.app-mockups {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+
+	.mockup-img:nth-child(2n) {
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.file {
+		margin: 15px 10px 0;
+		flex: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	:root {
+		--scroll-threshold: 60px;
+	}
+
+	.nav {
+		background-color: var(--main-nav-color);
+	}
+
+	.header {
+		height: 43vh;
+		background: url('../img/shubham-dhage-R5A_YlcSJwA-unsplash_small.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-text {
+		font-size: 25px;
+		top: 10%;
+	}
+
+	section {
+		line-height: 25px;
+	}
+
+	.wrapper {
+		margin: 30px 20px;
+	}
+
+	.section-title {
+		font-size: 23px;
+	}
+
+	.text-content {
+		font-size: 14px;
+	}
+
+	.about-app-flex-container {
+		flex-direction: column;
+	}
+
+	.app-functions-text {
+		width: 100%;
+	}
+
+	.app-mockups {
+		width: auto;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.mockup-img:nth-child(2n) {
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.mockup-img {
+		margin-top: 20px;
+	}
+
+	.team-member h3 {
+		font-size: 18px;
+		padding-bottom: 5px;
+	}
+
+	.team-member p {
+		font-size: 13px;
+		margin: 3px 0;
+	}
+
+	.member-photo {
+		width: 140px;
+	}
+
+	.meetings-table {
+		font-size: 14px;
+	}
+	.meetings-table th,
+	td {
+		padding: 5px 5px;
+	}
+	.meetings-table th {
+		font-size: 13px;
+	}
+
+	.file {
+		padding: 20px 0;
+		font-size: 15px;
+	}
+
+	.file .icon {
+		height: 80px;
+		padding-bottom: 7px;
+	}
+
+	.schedule .wrapper {
+		margin: 30px 20px;
+	}
+
+	.schedule-cards {
+		width: 76%;
+	}
+
+	.schedule-cards .card {
+		min-width: 250px;
+		height: 180px;
+	}
+
+	.card .card-title {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.card .card-subtitle {
+		font-size: 13px;
+		margin: 10px 20px 40px;
+		line-height: 17px;
+	}
+
+	.card p.progress {
+		font-size: 12px;
+	}
+
+	.card .progress-info {
+		font-size: 12px;
+	}
+}

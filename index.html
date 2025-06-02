@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeARn</title>
+    <link rel="shortcut icon" href="./img/virtual-reality.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="./img/virtual-reality.png" alt="cube displayed in AR above the phone">
+            <a href="#" class="logo-text">LeARn</a>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li class="nav-menu-link"><a href="#">Home</a></li>
+                <li class="nav-menu-link"><a href="#about">O projekcie</a></li>
+                <li class="nav-menu-link"><a href="#team">Zespół</a></li>
+                <li class="nav-menu-link"><a href="#schedule">Harmonogram</a></li>
+                <li class="nav-menu-link"><a href="#meetings">Spotkania</a></li>
+                <li class="nav-menu-link"><a href="#files">Pliki</a></li>
+            </ul>
+        </div>
+        <a href="#" class="nav-hamburger">
+            <span class="nav-hamburger-line"></span>
+            <span class="nav-hamburger-line"></span>
+            <span class="nav-hamburger-line"></span>
+        </a>
+    </nav>
+    <header class="header">
+        <div class="hero-bg">
+        </div>
+        <div class="hero-text">Nauka algorytmów z pomocą<span class="bold-text">AR</span></div>
+    </header>
+
+    <main class="main">
+        <section class="about-app" id="about">
+            <div class="wrapper">
+                <h2 class="section-title">O projekcie</h2>
+
+                <div class="text-content">
+                    <div class="about-app-text-introduction">
+                        <h3>Poznaj algorytmy w nowym wymiarze</h3>
+                        <p>Nasza aplikacja mobilna przenosi naukę algorytmów i struktur danych na wyższy poziom dzięki
+                            rozszerzonej rzeczywistości (AR) oraz animacjom 3D. Zamiast wczytywać się w niezrozumiałe
+                            opisy i próbować wyobrazić sobie działanie algorytmów, możesz zobaczyć, jak działają one w
+                            przestrzeni.</p>
+                        <p>Czy kiedykolwiek zastanawiałeś się, jak naprawdę przebiega sortowanie szybkie, jak działa BFS
+                            na
+                            grafie lub co dzieje się w stosie podczas operacji push i pop? Teraz możesz to
+                            zobaczyć w
+                            trójwymiarowej animacji!</p>
+                        </p>
+                    </div>
+
+                    <div class="about-app-flex-container">
+                        <div class="app-functions-text">
+                            <h3>Funkcje aplikacji</h3>
+                            <p class="functions-subheader">Animacje 3D w AR</p>
+                            <p>
+                                Zobacz działanie popularnych algorytmów w rzeczywistości rozszerzonej. Trójwymiarowe
+                                wizualizacje sprawią, że nawet najbardziej złożone algorytmy staną się zrozumiałe i
+                                przystępne.
+                            </p>
+                            <p class="functions-subheader">Kontrola nad przebiegiem animacji</p>
+                            <ul>
+                                <li>Pauzowanie i wznawianie animacji</li>
+                                <li>Zmiana prędkości animacji</li>
+                                <li>Interaktywne operacje na strukturach danych (np. dodawanie i usuwanie elementów w
+                                    czasie
+                                    rzeczywistym)</li>
+                            </ul>
+
+                            <p class="functions-subheader">Duży wybór różnych algorytmów i struktur danych</p>
+                            <ul>
+                                <li>Sortowania: bąbelkowe, szybkie, przez wstawianie, kubełkowe, przez scalanie, przez
+                                    wybieranie</li>
+                                <li>Struktury danych: stos, kolejka, lista</li>
+                                <li>Algorytmy grafowe: BFS, DFS, algorytm Dijkstry</li>
+                            </ul>
+
+                            <p class="functions-subheader">Opisy i listy kroków</p>
+                            <p>Algorytmy zawierają opisy działania i listy kroków, dzięki czemu użytkownik może nie
+                                tylko obserwować animację, ale również zrozumieć, co dokładnie dzieje się na każdym jej
+                                etapie.</p>
+                        </div>
+                        <div class="app-mockups">
+                            <img class="mockup-img" src="./img/app_screenshotAR.png" alt="mobile app interface mockup">
+                            <img class="mockup-img" src="./img/phone_mockup_mainmenu.png"
+                                alt="mobile app interface mockup">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="wrapper">
+                <h2 class="section-title">Zespół</h2>
+                <div class="members">
+                    <div class="team-member special-member">
+                        <img src="./img/cat10_cropped.png" alt="smiling beige cat with closed eyes"
+                            class="member-photo">
+                        <h3>dr Marta Burzańska</h3>
+                        <p>Opiekun zespołu</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat18_cropped.png" alt="smiling ginger cat with red bandana on its head"
+                            class="member-photo">
+                        <h3>Kamil Orczyk</h3>
+                        <p>AR Developer</p>
+                        <p>Code Reviewer</p>
+
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat12_cropped.png" alt="small brown sleepy cat" class="member-photo">
+                        <h3>Wiktoria Ziętak</h3>
+                        <p>Lider zespołu</p>
+                        <p>Web Developer</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat11_cropped.png" alt="white cat with a black patch over its right eye"
+                            class="member-photo">
+                        <h3>Aleksander Wierzchowski</h3>
+                        <p>AR Developer</p>
+                        <p>Technical Writer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat17_cropped.png" alt="smiling animated tiger" class="member-photo">
+                        <h3>Adrian Augustyniak</h3>
+                        <p>AR Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat20_cropped.png" alt="smiling ginger cat" class="member-photo">
+                        <h3>Kacper Pogodziński</h3>
+                        <p>AR Developer</p>
+                        <p>Code Reviewer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img/cat13_diff_eyes_cropped.png" alt="smiling white cat with heterochromia"
+                            class="member-photo">
+                        <h3>Mateusz Przystawski</h3>
+                        <p>AR Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule" id="schedule">
+            <div class="wrapper">
+                <h2 class="section-title">Harmonogram</h2>
+                <button class="nav-button prev"><svg class="schedule-nav-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg></button>
+
+                <div class="schedule-cards">
+                    <div class="card">
+                        <h3 class="card-title">Październik</h3>
+                        <p class="card-subtitle">Uformowanie zespołu i wybór opiekuna</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Listopad</h3>
+                        <p class="card-subtitle">Wybór tematu projektu i technologii</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Grudzień - Styczeń</h3>
+                        <p class="card-subtitle">Nauka technologii niezbędnych do stworzenia projektu</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Luty</h3>
+                        <p class="card-subtitle">Konfiguracja wspólnego repozytorium, rozpoczęcie wspólnej pracy nad
+                            projektem</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Marzec - Kwiecień</h3>
+                        <p class="card-subtitle">Tworzenie animacji algorytmów i UI aplikacji, testowanie aplikacji i
+                            wprowadzanie poprawek</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Maj</h3>
+                        <p class="card-subtitle">Testowanie aplikacji i poprawki błędów<br> Prezentacja projektu</p>
+                        <p class="progress">Progres:</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-info">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-button next"><svg class="schedule-nav-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg></button>
+            </div>
+        </section>
+
+        <section class="meetings" id="meetings">
+            <div class="wrapper">
+                <h2 class="section-title">Spotkania</h2>
+                <div class="text-content">
+                    <table class="meetings-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">29/05/2025 22/05/2025</th>
+                                <td>Ćwiczenie prezentacji projektu.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15/05/2025</th>
+                                <td>Omówienie wprowadzonych poprawek błędów w merge sort i strukturach oraz ukończonej dokumentacji projektu. Praca nad prezentacją.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">08/05/2025</th>
+                                <td>Podział zadań w związku z prezentacją projektu. Ustalenie co będzie prezentowane i w jaki sposób. Omówienie ostatnich poprawek w aplikacji: poprawa fizyki kostek, poprawki w merge sort, poprawki błędów przy zmianie orientacji ekranu, poprawa responsywności animacji w monitach. Progres w pracy nad dokumentacją użytkownika.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">30/04/2025</th>
+                                <td>Omówienie wdrożonego skalowania i przesuwania obiektów oraz rozwiązanych problemów w związku z tym. Poprawiona implementacja orientacji poziomej oraz stawiania obiektów w powietrzu. Ostateczne poprawki w animacjach sortowań, implementacja wskazówek dla użytkownika.
+                                    Ustalenie dalszych działań - testowanie, finalizacja zadań i przygotowania do
+                                    prezentacji.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">24/04/2025</th>
+                                <td>Omówienie postępów w pracach zespołu, w tym poprawek w algorytmach sortowania i
+                                    algorytmie Dijkstry oraz założeń dotyczących innej wersji trybu stawiania obiektów w
+                                    przestrzeni.
+                                    Ustalenia dot. skalowania animacji i wprowadzenia ograniczeń, podjęcie decyzji
+                                    dotyczących działania monitów w scenie AR. Implementacja powiększania algorytmów oraz kotwic, poprawki błędów przy zmianie prędkości algorytmów, dodanie opisów algorytmów, implementacja zmiany orientacji UI.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17/04/2025</th>
+                                <td>Omówienie wprowadzonych poprawek w algorytmach (kubełkowe, insertion sort, quick sort, selection sort, bąbelkowe), prezentacja działającej animacji
+                                    algorytmu Dijkstry (wraz z dropdownem) oraz opcji zmiany prędkości animacji. Aktualizacje na stronie www (sekcja 'O projekcie'), przygotowanie wersji Canvas dla orientacji poziomej, dodanie blokowania raycastów przez elementy UI, dodanie list kroków do aplikacji.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10/04/2025</th>
+                                <td>Update ws. postępów w implementacji sugestii i wprowadzaniu poprawek w algorytmach, omówienie zaimplementowanego algorytmu Dijkstry.
+                                    Ustalenia dot. ogólnego UI i UI dla algorytmu Dijkstry.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">03/04/2025</th>
+                                <td>Omówienie zauważonych błędów i sugestii dot. działania animacji algorytmów. Omówienie wykonanych zadań: poprawki w sortowaniu kubełkowym, zaimplementowane przełączanie pomiędzy opisami/krokami algorytmów, zmiana ikon na przyciskach struktur na tekst z nazwą funkcji, podniesienie pozycji sortowań i grafów. Podjęcie
+                                    decyzji o kolejnych funkcjonalnościach do zaimplementowania.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">27/03/2025</th>
+                                <td>Omówienie postępów w pracy: dodanie większej ilości grafów i ich losowania, poprawki
+                                    błędów w sortowaniach (quick sort, insertion sort), dodanie opcji wyświetlania algorytmu przed użytkownikiem (bez
+                                    wykrywania powierzchni), dodanie opcji wł./wył. kolorowania wykrytych powierzchni,
+                                    postępy w pracy nad dokumentacją.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20/03/2025</th>
+                                <td>Prezentacja i omówienie działających sortowań: quick sort, sortowania przez
+                                    wstawianie i kubełkowego. Prezentacja działania zaimplementowanych algorytmów przeszukiwania grafów DFS
+                                    i BFS oraz nowego interfejsu graficznego aplikacji. Omówienie problemów związanych z
+                                    algorytmami sortowania. Ustalenie kolejnych kroków w realizacji projektu.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">06/03/2025</th>
+                                <td>Omówienie problemów z algorytmami sortowania i postępów w ich implementacji oraz wykonanych zadań: sterowanie iteratorem na dotyk, opcja pauzowania algorytmów, gotowy merge sort. Aktualizacja zasad pracy na
+                                    wspólnym repozytorium. Omówienie kwestii wyglądu UI, implementacji orientacji
+                                    poziomej oraz dodatkowych opcji ułatwiających korzystanie z aplikacji.
+                                    Rozpoczęcie pracy nad algorytmami grafowymi.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">27/02/2025</th>
+                                <td>Omówienie zaimplementowanych algorytmów sortowania (sortowanie bąbelkowe, przez scalanie, przez wybór) i struktur (lista, stos, kolejka). Ustalenie kolejnych
+                                    zadań. Wybór osób odpowiedzialnych za akceptowanie merge requestów.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19/02/2025</th>
+                                <td>Omówienie wyników pracy przy tworzeniu testowych implementacji UI.
+                                    Skonfigurowanie
+                                    repozytorium projektu i ustalenie zasad wspólnej pracy. Podział algorytmów do
+                                    implementacji pomiędzy członków zespołu.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">06/02/2025</th>
+                                <td>Ustalenie wstępnego harmonogramu prac.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16/01/2025</th>
+                                <td>Omówienie postępów w implementacji próbnych animacji algorytmów w aplikacji
+                                    mobilnej
+                                    z użyciem AR.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">09/01/2025</th>
+                                <td>Prezentacja zaimplementowanych wizualizacji sortowania 3D, ustalenie
+                                    indywidualnego
+                                    podejścia do algorytmów.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19/12/2024</th>
+                                <td>Ustalenie wspólnej wizji projektu. Omówienie funkcjonalności aplikacji.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12/12/2024</th>
+                                <td>Omówienie wykonanych zadań: zaprezentowanie szablonu strony internetowej
+                                    projektu,
+                                    zarysu dokumentacji, wstępnych animacji i opisów algorytmów. Wybór technologii.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">04/12/2024</th>
+                                <td>Zatwierdzenie tematu projektu przez opiekuna zespołu. Rozdzielenie zadań dot.
+                                    dokumentacji, tworzenia strony internetowej i wstępnego pomysłu na aplikację.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">28/11/2024</th>
+                                <td>Omówienie wyników przeprowadzonego researchu. Podjęcie decyzji co do tematu
+                                    projektu.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">21/11/2024</th>
+                                <td>Omówienie pomysłów na projekt i wybranie dwóch propozycji do researchu.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="collapse-section-box"><button id="expandButton" class="collapse-section-button"><svg
+                            class="chevron-down-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="chevron-down-icon icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 11l8 3l8 -3" />
+                        </svg>
+                        <svg class="chevron-up-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-up">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 13l8 -3l8 3" />
+                        </svg></button></div>
+        </section>
+
+        <section class="files" id="files">
+            <div class="wrapper">
+                <h2 class="section-title">Pliki</h2>
+                <div class="files-content">
+                    <div class="file">
+                        <a class="button" href="./docs/Dokumentacja.pdf" target="_blank"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                                <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+                                <path d="M17 18h2" />
+                                <path d="M20 15h-3v6" />
+                                <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+                            </svg></a>
+                        <p>Dokumentacja projektu</p>
+                    </div>
+                    <div class="file">
+                        <a class="button" href="./docs/Dokumentacja Uzytkownika.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                                <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+                                <path d="M17 18h2" />
+                                <path d="M20 15h-3v6" />
+                                <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+                            </svg></a>
+                        <p>Dokumentacja użytkownika</p>
+                    </div>
+                    <div class="file">
+                        <a class="button" href="./docs/raporty_czlonkow_zespolu.pdf" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                                <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+                                <path d="M17 18h2" />
+                                <path d="M20 15h-3v6" />
+                                <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+                            </svg></a>
+                        <p>Raporty członków zespołu</p>
+                    </div>
+                    <div class="file">
+                        <a class="button" href="./docs/LeARn.apk" download><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-3d">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M12 13.5l4 -1.5" />
+                                <path d="M8 11.846l4 1.654v4.5l4 -1.846v-4.308l-4 -1.846z" />
+                                <path d="M8 12v4.2l4 1.8" />
+                            </svg></a>
+                        <p>Aplikacja mobilna</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024/2025 PZ Zespół nr 1</p>
+        <div class="attributions"><a class="flaticon-link" href="https://www.flaticon.com/free-icons/virtual-reality"
+                title="virtual reality icons" target="_blank" rel="noopener noreferrer">Virtual reality
+                icons created by Freepik - Flaticon | </a>
+            <a class="flaticon-link"
+                href="https://pl.freepik.com/darmowe-wektory/stylizowane-osoby-wysylajace-platnosci-i-odbierajace-pieniadze-na-bialym-tle-plaski-szablon-aplikacji-mobilnej_11541979.htm#fromView=search&page=1&position=17&uuid=fd2f1d69-8871-4201-91e8-d36294c482ab&query=Smartphone+Mockup">Mockup
+                image
+                created by pch.vector on Freepik</a>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

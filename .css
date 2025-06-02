@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--scroll-threshold: 250px;
+	--main-purple-color: rgb(179 153 237);
+	--main-white-color: rgb(239, 239, 239);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--main-white-color);
+	background-image: linear-gradient(
+		180deg,
+		rgba(44, 49, 81, 1),
+		rgba(17, 21, 54, 0.86)
+	);
+}
+
+.nav {
+	position: fixed;
+	margin-top: 0;
+	height: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0);
+	transition: background-color 0.2s;
+	z-index: 10;
+}
+
+.nav-logo {
+	display: flex;
+	font-size: 2rem;
+	margin: auto 1rem;
+}
+
+.nav-logo img {
+	height: 70px;
+}
+
+.nav-logo a {
+	margin: auto 30px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: var(--main-white-color);
+}
+
+.nav-menu ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	text-transform: uppercase;
+}
+
+.nav-menu ul li {
+	list-style-type: none;
+}
+
+.nav-menu ul li a {
+	padding: 1rem;
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--main-white-color);
+	transition: color 0.5s;
+}
+
+.nav-menu ul li a:hover {
+	color: var(--main-purple-color);
+}
+
+.nav-hamburger {
+	position: absolute;
+	top: 2rem;
+	right: 1.5rem;
+	width: 1.875rem;
+	height: 1.313rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.nav-hamburger-line {
+	height: 0.188rem;
+	width: 100%;
+	background-color: var(--main-white-color);
+	border-radius: 5px;
+	transition: all ease-in-out 0.2s;
+}
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	background: url('./img/shubham-dhage-R5A_YlcSJwA-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -2;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+
+.hero-text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: rgba(32, 30, 30, 0.889) 0px 0px 10px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	color: var(--main-white-color);
+	line-height: 30px;
+	scroll-margin-top: 80px;
+}
+
+section:nth-of-type(even) {
+	background-color: #654e9aa8;
+}
+
+.wrapper {
+	margin: 30px auto;
+	max-width: 1200px;
+	text-align: justify;
+}
+
+.section-title {
+	font-size: 30px;
+}
+
+.text-content {
+	padding: 20px 0;
+}
+
+.about-app {
+	padding-top: 20px;
+}
+
+.divider {
+	width: 13%;
+	height: 2px;
+	margin: 30px auto;
+	background-color: #fff;
+}
+
+footer {
+	position: relative;
+	padding: 30px 30px;
+	text-align: center;
+	background-color: rgba(18, 22, 43);
+	color: rgba(239, 239, 239, 0.742);
+}
+
+
+@media screen and (max-width: 1245px) {
+	:root {
+		--scroll-threshold: 150px;
+	}
+
+	.nav-hamburger {
+		display: flex;
+	}
+
+	.nav-logo {
+		display: flex;
+	}
+
+	.nav-logo img {
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 80%;
+	}
+
+	.nav-menu {
+		position: absolute;
+		top: -20rem;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		background-color: rgba(18, 22, 43);
+		transition: all ease-in-out 0.4s;
+		z-index: -1;
+	}
+
+	.nav {
+		height: 70px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav-menu ul {
+		margin: 70px 0 10px 0;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-menu ul li {
+		padding: 8px 0;
+		text-align: center;
+	}
+
+	.nav-menu.active {
+		top: 0;
+	}
+
+	.nav-hamburger {
+		top: 1.5rem;
+	}
+
+	.nav-hamburger.active :nth-child(1) {
+		transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+	}
+
+	.nav-hamburger.active :nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-hamburger.active :nth-child(3) {
+		transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+	}
+
+	.header {
+		height: 80vh;
+	}
+
+	.hero-text {
+		font-size: 40px;
+	}
+
+	.wrapper {
+		margin: 30px 60px;
+	}
+
+	.section-title {
+		font-size: 27px;
+	}
+
+	.divider {
+		width: 20%;
+		height: 1px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	:root {
+		--scroll-threshold: 60px;
+	}
+
+	.header {
+		height: 50vh;
+	}
+
+	.hero-text {
+		font-size: 25px;
+	}
+
+	section {
+		line-height: 25px;
+	}
+
+	.wrapper {
+		margin: 30px 20px;
+	}
+
+	.section-title {
+		font-size: 23px;
+	}
+
+	.text-content {
+		font-size: 16px;
+	}
+
+	.divider {
+		width: 30%;
+		height: 1px;
+	}
+}
