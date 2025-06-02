@@ -25,5 +25,6 @@ Strona została zaprojektowana i stworzona przez [@Wiktorię Ziętak](https://gi
 
 
 
-## 📱 Repozytorium projektu:
-https://github.com/LeARnPZ/LeARn
+📱 Repozytorium projektu
+--
+🔗 https://github.com/LeARnPZ/LeARn
